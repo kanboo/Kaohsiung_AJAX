@@ -2,7 +2,6 @@
 @import 'font-awesome';
 .warp {
     max-width: 1024px;
-    min-height: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -41,10 +40,6 @@ header {
 }
 
 aside {
-    // position: absolute;
-    // top: 352px;
-    // left: 0;
-    // right: 0;
     position: relative;
     width: 800px;
     height: 112px;
@@ -105,10 +100,7 @@ aside {
         i {
             position: absolute;
             top: -2px;
-            /* bottom: 0; */
-            /* right: 0; */
             left: 4px;
-            /* margin: auto; */
             color: #559AC8;
             font-size: 24px;
         }
@@ -140,7 +132,7 @@ main {
         }
         .card {
             width: 464px;
-            height: 273px;
+            height: auto;
             .card_header {
                 height: 155px;
                 background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960);
@@ -167,6 +159,7 @@ main {
                 padding: 16px 24px 22px 24px;
                 p {
                     display: inline-block;
+                    max-width: 392px;
                     font-family: AppleSystemUIFont;
                     font-size: 16px;
                     color: #000000;
@@ -178,11 +171,23 @@ main {
                     align-items: flex-start;
                     position: relative;
                     >li {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        img {
+                            margin-right: 5px;
+                        }
                         &:last-child {
                             position: absolute;
                             right: 0px;
                             bottom: 0px;
                         }
+                    }
+                    .add img {
+                        padding: 0 1px;
+                    }
+                    .tel img {
+                        padding: 0 3px;
                     }
                 }
             }
@@ -199,7 +204,6 @@ footer {
     justify-content: flex-start;
     align-items: center;
     margin-top: 50px;
-
     h3 {
         font-family: AppleSystemUIFont;
         font-size: 14px;

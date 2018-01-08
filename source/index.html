@@ -20,17 +20,17 @@
 
             <select id="selectarea">
                 <option value="null">-- 請選擇行政區 --</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+                <option value="苓雅區">苓雅區</option>
+                <option value="三民區">三民區</option>
+                <option value="新興區">新興區</option>
+                <option value="鹽埕區">鹽埕區</option>
             </select>
         </header>
 
 
         <aside>
             <h3>熱門行政區</h3>
-            <ul>
+            <ul id="hotzonelist">
                 <li>
                     <input type="button" style="background: #8A82CC;" value="苓雅區">
                 </li>
@@ -49,7 +49,6 @@
 
         <div id="hr">
             <div class="icon-down">
-
                 <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
         </div>
@@ -57,12 +56,13 @@
 
         <main>
             <article>
-                <h2>三民區</h2>
+                <h2 id="area_title">請選擇行政區</h2>
                 <ul class="area_list">
+
+                    <!-- 
                     <li class="area_item">
                         <div class="card">
                             <div class="card_header">
-                                <!-- <img src="http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960" alt=""> -->
                                 <h3>高雄願景館</h3>
                                 <p>三民區</p>
                             </div>
@@ -91,7 +91,6 @@
                     <li class="area_item">
                         <div class="card">
                             <div class="card_header">
-                                <!-- <img src="http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960" alt=""> -->
                                 <h3>高雄願景館</h3>
                                 <p>三民區</p>
                             </div>
@@ -120,7 +119,6 @@
                     <li class="area_item">
                         <div class="card">
                             <div class="card_header">
-                                <!-- <img src="http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960" alt=""> -->
                                 <h3>高雄願景館</h3>
                                 <p>三民區</p>
                             </div>
@@ -149,7 +147,6 @@
                     <li class="area_item">
                         <div class="card">
                             <div class="card_header">
-                                <!-- <img src="http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960" alt=""> -->
                                 <h3>高雄願景館</h3>
                                 <p>三民區</p>
                             </div>
@@ -178,7 +175,6 @@
                     <li class="area_item">
                         <div class="card">
                             <div class="card_header">
-                                <!-- <img src="http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960" alt=""> -->
                                 <h3>高雄願景館</h3>
                                 <p>三民區</p>
                             </div>
@@ -203,7 +199,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
+
 
                 </ul>
             </article>
@@ -218,7 +215,8 @@
 
     </div>
 
-
+    <script src="js/vendors.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>

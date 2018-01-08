@@ -133,6 +133,16 @@ main {
         .card {
             width: 464px;
             height: auto;
+            transition: all 0.5s;
+
+            &:hover {
+                width: 465px;
+                /* 改變 滑鼠游標 */
+                cursor: pointer;
+                /* 增加陰影的效果 */
+                box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.5);
+            }
+            
             .card_header {
                 height: 155px;
                 background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960);

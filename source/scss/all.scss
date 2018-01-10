@@ -1,63 +1,63 @@
 @import 'reset';
 @import 'font-awesome';
 .warp {
-    max-width: 1024px;
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
+    max-width: 1024px;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 380px;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    height: 380px;
     background-image: url(../img/Hero.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     h1 {
-        font-family: PingFangTC-Regular;
-        font-size: 40px;
+        margin-top: 89px;
         color: #FFFFFF;
         letter-spacing: 3.89px;
-        margin-top: 89px;
+        font-size: 40px;
+        font-family: PingFangTC-Regular;
     }
     #selectarea {
+        margin-top: 96px;
         width: 452px;
         height: 48px;
-        background: rgba(255, 255, 255, 0.70);
         border: 3px solid #FFFFFF;
         border-radius: 3px;
-        margin-top: 96px;
-        font-family: PingFangTC-Regular;
-        font-size: 18px;
+        background: rgba(255, 255, 255, 0.70);
         color: #000000;
+        font-size: 18px;
+        font-family: PingFangTC-Regular;
         line-height: 21px;
     }
 }
 
 aside {
     position: relative;
-    width: 800px;
-    height: 112px;
-    background: #FFFFFF;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
-    border-radius: 5px;
-    margin: 0 auto;
     z-index: 10;
-    margin-top: -26px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: -26px;
+    width: 800px;
+    height: 112px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
     h3 {
-        font-family: AppleSystemUIFont;
-        font-size: 18px;
-        color: #000000;
         margin: 0 26px;
         margin-top: 20px;
+        color: #000000;
+        font-size: 18px;
+        font-family: AppleSystemUIFont;
     }
     ul {
         display: flex;
@@ -65,7 +65,7 @@ aside {
         margin: 0 51px;
         margin-top: 14px;
         li {
-            &:nth-child( n + 2) {
+            &:nth-child(n+2) {
                 margin-left: 23px;
             }
         }
@@ -73,29 +73,29 @@ aside {
             width: 130px;
             height: 42px;
             border-radius: 5px;
-            font-family: PingFangTC-Regular;
-            font-size: 20px;
             color: #FFFFFF;
+            font-size: 20px;
+            font-family: PingFangTC-Regular;
         }
     }
 }
 
 #hr {
     position: relative;
-    border: 1px dashed #559AC8;
-    width: 900px;
     margin: 0 auto;
     margin-top: 49px;
+    width: 900px;
+    border: 1px dashed #559AC8;
     .icon-down {
         position: absolute;
         top: -9px;
         right: 0;
         left: 0;
         margin: 0 auto;
-        border-radius: 50%;
         width: 24px;
         height: 24px;
         border: 1px solid #559AC8;
+        border-radius: 50%;
         background: white;
         i {
             position: absolute;
@@ -110,23 +110,23 @@ aside {
 main {
     margin-top: 65px;
     h2 {
-        font-family: SFNSDisplay;
-        font-size: 36px;
         color: #8A82CC;
         text-align: center;
+        font-size: 36px;
+        font-family: SFNSDisplay;
     }
     .area_list {
-        width: calc(100% - 80px);
-        margin: 0 auto;
-        margin-top: 24px;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 24px;
+        width: calc(100% - 80px);
         >li {
-            &:nth-child( 2n + 2) {
+            &:nth-child(2n+2) {
                 margin-left: 15px;
             }
-            &:nth-child( n + 3) {
+            &:nth-child(n+3) {
                 margin-top: 36px;
             }
         }
@@ -137,53 +137,53 @@ main {
 
             &:hover {
                 width: 465px;
-                /* 改變 滑鼠游標 */
-                cursor: pointer;
                 /* 增加陰影的效果 */
                 box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.5);
+                /* 改變 滑鼠游標 */
+                cursor: pointer;
             }
             
             .card_header {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                padding: 0 24px 14px 24px;
                 height: 155px;
                 background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                padding: 0 24px 14px 24px;
                 color: white;
                 h3 {
-                    font-family: SFNSDisplay;
                     font-size: 24px;
+                    font-family: SFNSDisplay;
                 }
                 p {
-                    font-family: PingFangTC-Regular;
                     font-size: 16px;
+                    font-family: PingFangTC-Regular;
                 }
             }
             .card_body {
+                padding: 16px 24px 22px 24px;
                 background: #FFFFFF;
                 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
-                padding: 16px 24px 22px 24px;
                 p {
                     display: inline-block;
                     max-width: 392px;
-                    font-family: AppleSystemUIFont;
-                    font-size: 16px;
                     color: #000000;
+                    font-size: 16px;
+                    font-family: AppleSystemUIFont;
                 }
                 .contentlist {
+                    position: relative;
                     display: flex;
+                    align-items: flex-start;
                     flex-direction: column;
                     justify-content: flex-start;
-                    align-items: flex-start;
-                    position: relative;
                     >li {
                         display: flex;
-                        justify-content: flex-start;
                         align-items: flex-start;
+                        justify-content: flex-start;
                         img {
                             margin-right: 5px;
                         }
@@ -206,24 +206,24 @@ main {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
     height: 90px;
     background: #559AC8;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 50px;
     h3 {
-        font-family: AppleSystemUIFont;
-        font-size: 14px;
-        color: #FFFFFF;
         margin-top: 24px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: AppleSystemUIFont;
     }
     p {
-        font-family: AppleSystemUIFont;
-        font-size: 14px;
-        color: #FFD366;
         margin-top: 15px;
+        color: #FFD366;
+        font-size: 14px;
+        font-family: AppleSystemUIFont;
     }
 }
